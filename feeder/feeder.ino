@@ -77,6 +77,93 @@ servo20.attach(50);
 void loop() {
   // put your main code here, to run repeatedly:
 
-
+if (Serial.available() > 0)   // see if incoming serial data:
+  { 
+    inData = Serial.read();  // read oldest byte in serial buffer:
+  } 
+  
+ if (inData == 'F'){
+        a = Serial.parseInt();
+        inData = 0;
+        
+ switch (var) {
+   
+          case 1:
+             myservo.write(servo1val+50);                  // sets the servo position according to the scaled value 
+             delay(15);
+             while(digitalRead()== HIGH){
+               }
+               myservo.write(servo1val);  
+               a = 0;
+          break;
+          
+          case 2:
+           //do something when var equals 2
+          break;
+          
+          case 3:
+            //do something when var equals 1
+          break;
+          
+          case 4:
+           //do something when var equals 2
+          break;
+          case 5:
+            //do something when var equals 1
+          break;
+          
+          case 6:
+           //do something when var equals 2
+          break;
+          
+          case 7:
+            //do something when var equals 1
+          break;
+          case 8:
+           //do something when var equals 2
+          break;
+          case 9:
+            //do something when var equals 1
+          break;
+          case 10:
+           //do something when var equals 2
+          break;
+          case 11:
+            //do something when var equals 1
+          break;
+          case 12:
+           //do something when var equals 2
+          break;
+          case 13:
+            //do something when var equals 1
+          break;
+          case 14:
+           //do something when var equals 2
+          break;
+          case 15:
+            //do something when var equals 1
+          break;
+          case 16:
+           //do something when var equals 2
+          break;
+          case 17:
+            //do something when var equals 1
+          break;
+          case 18:
+           //do something when var equals 2
+          break;
+          case 19:
+            //do something when var equals 1
+          break;
+          case 20:
+           //do something when var equals 2
+          break;
+          
+          default: 
+          // if nothing else matches, do the default
+          // default is optional
+          
+  }
+  } 
 
 }
